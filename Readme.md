@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Andrey Saratovcev](https://up.htmlacademy.ru/htmlcss/30/user/1686397).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Белогубова] (https://htmlacademy.ru/profile/id87018)].
 
 ---
 
