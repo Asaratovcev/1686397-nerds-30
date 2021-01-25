@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин готовых шаблонов</title>
+  </head>
+
+  <body>
+
+    <header>
+
+      <nav>
+        <a href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+        </a>
+        <ul>
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <a href="blank.html">Корзина</a>
+      </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Магазин готовых шаблонов</h1>
+
+        <section>
+            <h2>Фильтр шаблонов</h2>
+            <form method="get" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                  <legend>Стоимость:</legend>
+                  <input type="range" min="0" max="15000" step="100" value="11000" id="price"> 
+                  <p>от <input type="text" placeholder="0"> до <input type="text" placeholder="15 000"></p>
+              </fieldset>  
+              <fieldset>
+                <legend>Сетка</legend>
+                <ul>
+                  <li>
+                    <input type="radio" name="grid" id="filter-adaptive" checked>
+                    <label for="filter-adaptive">Адаптивная</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="grid" id="filter-fixed">
+                    <label for="filter-fixed">Фиксированная</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="grid" id="filter-rubber">
+                    <label for="filter-rubber">Резиновая</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Особенности:</legend>
+                <ul>
+                    <li>
+                      <input type="checkbox" name="slider" id="filter-slider" checked>
+                      <label for="filter-slider">Слайдер</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="advantage" id="filter-advantage">
+                      <label for="filter-advantage">Блок преимуществ</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="news" id="filter-news" checked>
+                      <label for="filter-news">Новости</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="gallery" id="filter-gallery">
+                      <label for="filter-gallery">Галерея</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="basket" id="filter-basket">
+                      <label for="filter-basket">Корзина</label>
+                    </li>
+                </ul>
+              </fieldset>
+              <button type="submit">Показать</button>
+            </form>
+        </section>  
+          <section>
+              <h2>Сортировать:</h2>
+              <ul>
+                  <li><a href="#">По цене</a></li>
+                  <li><a href="#">По типу</a></li>
+                  <li><a href="#">По названию</a></li>
+                  <li><button type="button">down</button></li>
+                  <li><button type="button">up</button></li>
+              </ul>
+          </section>
+          <section>
+              <h2>Список шаблонов</h2>
+                <ul>
+                  <li>
+                    <a href="#">
+                       <figure>
+                        <img src="img/browser.png" width="360" height="40" alt="панель">
+                        <img src="img/sedona.png" width="358" height="578" alt="sedona">
+                       </figure> 
+                    </a>
+                    <p><b>SEDONA</b></p>
+                    <p>Информационный сайт<br>для туристов</p>
+                    <button type="button">Купить</button>  
+                   </li>   
+                    <li>
+                       <a href="#">
+                          <figure>
+                            <img src="img/browser.png" width="360" height="40" alt="панель">
+                            <img src="img/pink.png" width="358" height="578" alt="pink">
+                          </figure> 
+                       </a>    
+                    </li>
+                    <li>
+                        <a href="#">
+                           <figure>
+                             <img src="img/browser.png" width="360" height="40" alt="панель">
+                             <img src="img/borodinsky.png" width="358" height="578" alt="borodinsky">
+                           </figure> 
+                        </a>    
+                     </li>
+                     <li>
+                        <a href="#">
+                           <figure>
+                             <img src="img/browser.png" width="360" height="40" alt="панель">
+                             <img src="img/mishka.png" width="358" height="578" alt="mishka">
+                           </figure> 
+                        </a>    
+                     </li>
+                     <li>
+                        <a href="#">
+                           <figure>
+                             <img src="img/browser.png" width="360" height="40" alt="панель">
+                             <img src="img/learning.png" width="358" height="578" alt="learning">
+                           </figure> 
+                        </a>    
+                     </li>
+                     <li>
+                        <a href="#">
+                           <figure>
+                             <img src="img/browser.png" width="360" height="40" alt="панель">
+                             <img src="img/kvas.png" width="358" height="578" alt="kvas">
+                           </figure> 
+                        </a>    
+                     </li>
+                </ul>              
+            </section>
+
+    </main>
+    
+   <footer>
+
+    <section>
+        <!-- Здесь будет карта -->
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+        тел. +7 (812) 275-75-75
+        <p><button type="button">НАПИШИТЕ НАМ</button></p>
+      </section>
+      <section>
+        <!--не знаю, как без css, вставить логотипы соц. сетей, так как они составные, из двух картинок-->
+        <ul>
+          <li>
+            <a href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Инстаграм</a>
+          </li>
+        </ul>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+
+   </footer>
+
+   <section>
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="urname"><b>Ваше имя:</b></label>
+        <label for="uremail"><b>Ваш email:</b></label>
+      </p>  
+        <input id="urname" type="text" name="login" placeholder="Имя Фамилия">
+        <input id="uremail" type="email" name="email" placeholder="email@example.com">
+      <p>
+        <label for="lettertext"><b>Текст письма:</b></label>
+      </p>  
+        <input id="lettertext" type="text" name="lettertext" placeholder="В свободной форме">
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+</section>
+
+ </body> 
+</html>  
+
+
+     
