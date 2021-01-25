@@ -14,12 +14,12 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
         </a>
         <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-        <a href="blank.html">Корзина</a>
+        <a href="#">Корзина</a>
       </nav>
 
     </header>
@@ -34,7 +34,7 @@
               <fieldset>
                   <legend>Стоимость:</legend>
                   <input type="range" min="0" max="15000" step="100" value="11000" id="price"> 
-                  <p>от <input type="text" placeholder="0"> до <input type="text" placeholder="15 000"></p>
+                  <p>от <input type="number" min="0" max="15000" placeholder="0"> до <input type="number" min="0" max="15000" placeholder="15 000"></p>
               </fieldset>  
               <fieldset>
                 <legend>Сетка</legend>
@@ -95,55 +95,71 @@
               <h2>Список шаблонов</h2>
                 <ul>
                   <li>
-                    <a href="#">
-                       <figure>
-                        <img src="img/browser.png" width="360" height="40" alt="панель">
-                        <img src="img/sedona.png" width="358" height="578" alt="sedona">
-                       </figure> 
-                    </a>
-                    <p><b>SEDONA</b></p>
-                    <p>Информационный сайт<br>для туристов</p>
-                    <button type="button">Купить</button>  
+                    <div>
+                      <span>•</span><span>•</span><span>•</span>
+                    </div>      
+                    <img src="img/sedona.png" width="358" height="578" alt="sedona">
+                    <div>
+                     <p>SEDONA</p>
+                     <p>Информационный сайт<br>для туристов</p>
+                     <button type="button">9 900 ₽</button>
+                    </div>  
                    </li>   
                     <li>
-                       <a href="#">
-                          <figure>
-                            <img src="img/browser.png" width="360" height="40" alt="панель">
+                        <div>
+                            <span>•</span><span>•</span><span>•</span>
+                        </div>   
                             <img src="img/pink.png" width="358" height="578" alt="pink">
-                          </figure> 
-                       </a>    
+                       <div>
+                        <p>PINK APP</p>
+                        <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                        <button type="button">9 900 ₽</button>
+                       </div>        
                     </li>
                     <li>
-                        <a href="#">
-                           <figure>
-                             <img src="img/browser.png" width="360" height="40" alt="панель">
+                        <div>
+                            <span>•</span><span>•</span><span>•</span>
+                          </div> 
                              <img src="img/borodinsky.png" width="358" height="578" alt="borodinsky">
-                           </figure> 
-                        </a>    
+
+                        <div>
+                            <p>BARBERSHOP</p>
+                            <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+                            <button type="button">9 900 ₽</button>
+                        </div>        
                      </li>
                      <li>
-                        <a href="#">
-                           <figure>
-                             <img src="img/browser.png" width="360" height="40" alt="панель">
+                        <div>
+                            <span>•</span><span>•</span><span>•</span>
+                          </div> 
                              <img src="img/mishka.png" width="358" height="578" alt="mishka">
-                           </figure> 
-                        </a>    
+                        <div>
+                            <p>MISHKA</p>
+                            <p>Интернет-магазин<br>вязаных игрушек</p>
+                            <button type="button">9 900 ₽</button>
+                        </div>        
                      </li>
                      <li>
-                        <a href="#">
-                           <figure>
-                             <img src="img/browser.png" width="360" height="40" alt="панель">
+                        <div>
+                            <span>•</span><span>•</span><span>•</span>
+                          </div> 
                              <img src="img/learning.png" width="358" height="578" alt="learning">
-                           </figure> 
-                        </a>    
+                        <div>
+                            <p>A PLUS</p>
+                            <p>Лендинг курсов повышения<br>квалификации</p>
+                            <button type="button">9 900 ₽</button>
+                        </div>        
                      </li>
                      <li>
-                        <a href="#">
-                           <figure>
-                             <img src="img/browser.png" width="360" height="40" alt="панель">
+                        <div>
+                            <span>•</span><span>•</span><span>•</span>
+                          </div> 
                              <img src="img/kvas.png" width="358" height="578" alt="kvas">
-                           </figure> 
-                        </a>    
+                        <div>
+                            <p>КВАСТ</p>
+                            <p>Промо-сайт производителя<br>крафтового кваса</p>
+                            <button type="button">9 900 ₽</button>
+                        </div>        
                      </li>
                 </ul>              
             </section>
@@ -154,46 +170,63 @@
 
     <section>
         <!-- Здесь будет карта -->
+        <img src="img/map1.png" width="1440" height="416" alt="map">
         <h2>NЁRDS DESIGN STUDIO</h2>
         <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-        тел. +7 (812) 275-75-75
-        <p><button type="button">НАПИШИТЕ НАМ</button></p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <button type="button">НАПИШИТЕ НАМ</button>
       </section>
       <section>
-        <!--не знаю, как без css, вставить логотипы соц. сетей, так как они составные, из двух картинок-->
         <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a href="#"><img src="img/vk-icon.png" alt="vkontakte"></a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a href="#"><img src="img/fb-icon.png" alt="facebook"></a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a href="#"><img src="img/insta-icon.png" alt="instagram"></a>
           </li>
         </ul>
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
+      <div>
+        <ul>
+            <li>
+              <a>1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">СЛЕДУЮЩАЯ</a>
+            </li>
+          </ul>
+       </div>   
 
    </footer>
 
    <section>
     <h2>Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="urname"><b>Ваше имя:</b></label>
-        <label for="uremail"><b>Ваш email:</b></label>
-      </p>  
+    <form action="https://echo.htmlacademy.ru" method="post" id="mailform">
+      <div>
+        <label for="urname">Ваше имя:</label>
         <input id="urname" type="text" name="login" placeholder="Имя Фамилия">
+      </div>
+      <div>  
+        <label for="uremail">Ваш email:</label>
         <input id="uremail" type="email" name="email" placeholder="email@example.com">
-      <p>
-        <label for="lettertext"><b>Текст письма:</b></label>
-      </p>  
-        <input id="lettertext" type="text" name="lettertext" placeholder="В свободной форме">
-      <p>
+      </div>  
+      <div>
+        <label for="lettertext">Текст письма:</label>
+        <textarea id="lettertext" name="text" form="mailform" rows="4" placeholder="В свободной форме"></textarea>
+      </div>
         <button type="submit">Отправить</button>
-      </p>
+     
     </form>
 </section>
 
