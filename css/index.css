@@ -1,0 +1,272 @@
+:root {
+    --basic-color-bg:#EEEEEE;
+    --basic-color-btn:#FB565A;
+    --basic-btn-hover:#E74246;
+    --basic-btn-active:#D7373B;
+    --green-btn:#00CA74;
+    --green-btn-hover:#00BC6C;
+    --green-btn-active:#00AA62;
+    --gold-btn:#EFC84A;
+    --gold-btn-hover:#EAB534;
+    --gold-btn-active:#E5A722;
+    --color-btn:#FFFFFF;
+    --basic-color-txt:#283136;
+    --second-color-txt:#000000;
+    --gray-txt:#666666;
+    --darkgray-txt:#444444;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  }
+@font-face {
+    font-family: "Roboto Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  }
+
+.page-body {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-color-txt);
+}
+
+.main-header {
+    background-color: var(--basic-color-bg);
+}
+
+.main-nav {
+    background-color: var(--basic-color-bg);
+}
+
+.nerds-logo:active {
+    background: url(img/nerds-logo1.png);
+}
+
+.navigation {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px; 
+    text-transform: uppercase; 
+    color: var(--second-color-txt);
+    text-decoration: none;  
+}
+
+.navigation-cart {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px; 
+    text-transform: uppercase; 
+    color: var(--second-color-txt);
+    text-decoration: none;
+}
+
+.navigation:hover {
+    color: var(--basic-color-btn);
+}
+
+.navigation:active {
+    color: var(--basic-color-txt);
+    opacity: 0.3;  
+}
+
+.sliders {
+    background-color: var(--basic-color-bg);
+}
+
+ul {
+    list-style-type: none;  
+}
+
+.hide {
+    display: none;
+}
+
+.button {
+    width: 240px;
+    height: 50px;
+    background: var(--basic-color-btn);
+    border-radius: 3px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--color-btn);
+} 
+
+.button:hover {
+    background: var(--basic-btn-hover);
+} 
+
+.button:active {
+    background: var(--basic-btn-active);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+} 
+
+.button-green {
+    width: 240px;
+    height: 50px;
+    background: var(--green-btn);
+    border-radius: 3px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--color-btn);
+} 
+
+.button-green:hover {
+    background: var(--green-btn-hover);
+} 
+
+.button-green:active {
+    background: var(--green-btn-active);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-gold {
+    width: 240px;
+    height: 50px;
+    background: var(--gold-btn);
+    border-radius: 3px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--color-btn);
+} 
+
+.button-gold:hover {
+    background: var(--gold-btn-hover);
+} 
+
+.button-gold:active {
+    background: var(--gold-btn-active);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.partner-logo {
+    opacity: 0.2;
+}
+
+.partner-logo:hover {
+    opacity: 1;
+}
+
+.partner-logo:active {
+    opacity: 0.1;
+}
+
+.slider-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--second-color-txt);
+
+} 
+
+.about-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: var(--second-color-txt);
+}
+
+.service-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--second-color-txt);
+    text-transform: uppercase; 
+}
+
+.textbold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px; 
+    text-transform: uppercase;
+}
+
+.textpercent {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--second-color-txt);
+}
+
+.textsubpercent {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px
+}
+
+.textfooterbold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--second-color-txt);
+}
+
+.textfooter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--gray-txt);
+}
+
+.textfooterbig {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--second-color-txt);
+}
+
+.textfootersmall {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--darkgray-txt);
+}
+
+.feedback-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--second-color-txt);
+}
+
+.feedback-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--second-color-txt);
+}
+
