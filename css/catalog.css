@@ -25,14 +25,23 @@
     font-style: normal;
     src: url("../fonts/roboto.woff2") format("woff2"),
     url("../fonts/roboto.woff") format("woff");
-  }
+}
 @font-face {
     font-family: "Roboto Bold";
     font-weight: 700;
     font-style: normal;
     src: url("../fonts/robotobold.woff2") format("woff2"),
     url("../fonts/robotobold.woff") format("woff");
-  }
+}
+
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 
 .page-body {
     font-family: "Roboto";
@@ -165,7 +174,6 @@ ul {
     letter-spacing: 2px;
     padding-left: 5px;
 }
-
 
 .subdiv {
     display: none;

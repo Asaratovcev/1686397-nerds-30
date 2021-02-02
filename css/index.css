@@ -31,6 +31,14 @@
     url("../fonts/robotobold.woff") format("woff");
   }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .page-body {
     font-family: "Roboto";
     font-size: 16px;
@@ -85,10 +93,6 @@
 
 ul {
     list-style-type: none;  
-}
-
-.hide {
-    display: none;
 }
 
 .button {
