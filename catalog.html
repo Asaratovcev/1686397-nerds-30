@@ -36,7 +36,7 @@
 
         <h1 class="main-title">Магазин готовых шаблонов</h1>
 
-        <section>
+        <section class="template-filter clearfix">
             <h2  class="visually-hidden">Фильтр шаблонов</h2>
             <form method="get" action="https://echo.htmlacademy.ru">
               <fieldset>
@@ -92,17 +92,17 @@
           <section>
               <h2 class="textmidbold">Сортировать:</h2>
               <ul>
-                  <li><a class="sortby" href="#">По цене</a></li>
-                  <li><a class="sortby" href="#">По типу</a></li>
-                  <li><a class="sortby" href="#">По названию</a></li>
-                  <li><button class="downbutton" type="button">down</button></li>
-                  <li><button class="upbutton" type="button">up</button></li>
+                  <li class="sortby-item"><a class="sortby" href="#">По цене</a></li>
+                  <li class="sortby-item"><a class="sortby" href="#">По типу</a></li>
+                  <li class="sortby-item"><a class="sortby" href="#">По названию</a></li>
+                  <li class="sortby-item"><button class="downbutton" type="button">down</button></li>
+                  <li class="sortby-item"><button class="upbutton" type="button">up</button></li>
               </ul>
           </section>
-          <section>
+          <section class="template-section">
               <h2 class="visually-hidden">Список шаблонов</h2>
                 <ul>
-                  <li>
+                  <li class="template-list">
                    <div class="full-template"> 
                     <div class="panel">
                       <span>•</span><span>•</span><span>•</span>
@@ -111,7 +111,7 @@
                     
                     <div class="subdiv">
                      <p class="template-name">SEDONA</p>
-                     <p class="textmidpopup">Информационный сайт<br>для туристов</p>
+                     <p class="textmidpopup">Информационный сайт для туристов</p>
                      <button class="button button-template" type="button">9 900 ₽</button>
                     </div> 
                    </div>    
@@ -124,7 +124,7 @@
                             <img class="template" src="img/pink.png" width="358" height="578" alt="pink">
                        <div class="subdiv">
                         <p class="template-name">PINK APP</p>
-                        <p class="textmidpopup">Продуктовый лендинг<br>приложения для iOS и Android</p>
+                        <p class="textmidpopup">Продуктовый лендинг приложения для iOS и Android</p>
                         <button class="button button-template" type="button">9 900 ₽</button>
                        </div>
                      </div>         
@@ -138,7 +138,7 @@
 
                         <div class="subdiv">
                             <p class="template-name">BARBERSHOP</p>
-                            <p class="textmidpopup">Сайт салона красоты.<br>Для мужчин, да.</p>
+                            <p class="textmidpopup">Сайт салона красоты. Для мужчин, да.</p>
                             <button class="button button-template" type="button">9 900 ₽</button>
                         </div> 
                        </div>        
@@ -151,7 +151,7 @@
                              <img class="template" src="img/mishka.png" width="358" height="578" alt="mishka">
                         <div class="subdiv">
                             <p class="template-name">MISHKA</p>
-                            <p class="textmidpopup">Интернет-магазин<br>вязаных игрушек</p>
+                            <p class="textmidpopup">Интернет-магазин вязаных игрушек</p>
                             <button class="button button-template" type="button">9 900 ₽</button>
                         </div>
                        </div>         
@@ -164,7 +164,7 @@
                              <img class="template" src="img/learning.png" width="358" height="578" alt="learning">
                         <div class="subdiv">
                             <p class="template-name">A PLUS</p>
-                            <p class="textmidpopup">Лендинг курсов повышения<br>квалификации</p>
+                            <p class="textmidpopup">Лендинг курсов повышения квалификации</p>
                             <button class="button button-template" type="button">9 900 ₽</button>
                         </div>
                        </div>         
@@ -177,25 +177,25 @@
                              <img class="template" src="img/kvas.png" width="358" height="578" alt="kvas">
                         <div class="subdiv">
                             <p class="template-name">КВАСТ</p>
-                            <p class="textmidpopup">Промо-сайт производителя<br>крафтового кваса</p>
+                            <p class="textmidpopup">Промо-сайт производителя крафтового кваса</p>
                             <button class="button button-template" type="button">9 900 ₽</button>
                         </div>
                        </div>         
                      </li>
                 </ul>              
             </section>
-            <div>
+            <div class="pages">
                 <ul>
-                    <li>
+                    <li class="pages-item">
                       <a class="button page-button current">1</a>
                     </li>
-                    <li>
+                    <li class="pages-item">
                       <a class="button page-button" href="#">2</a>
                     </li>
-                    <li>
+                    <li class="pages-item">
                       <a class="button page-button" href="#">3</a>
-                    </li>
-                    <li>
+                    </li class="pages-item">
+                    <li class="pages-item">
                       <a class="button page-button forward" href="#">СЛЕДУЮЩАЯ</a>
                     </li>
                   </ul>
