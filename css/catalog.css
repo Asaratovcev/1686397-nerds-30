@@ -52,6 +52,20 @@
 
 .main-header {
     background-color: var(--basic-color-bg);
+    text-align: center;
+ 
+}
+
+.main-title {
+    margin-top: 0;
+    padding: 10%;
+    background-color: var(--basic-color-bg);
+    text-align: center;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--second-color-txt);
+  
 }
 
 .nerds-logo:active {
@@ -68,6 +82,19 @@
     text-decoration: none;  
 }
 
+.nav-list {
+    display: inline;
+}
+
+.navigation:hover {
+    color: var(--basic-color-btn);
+}
+
+.navigation:active {
+    color: var(--basic-color-txt);
+    opacity: 0.3;  
+}
+
 .navigation-cart {
     font-style: normal;
     font-weight: 500;
@@ -78,13 +105,13 @@
     text-decoration: none;
 }
 
-.navigation:hover {
+.navigation-cart:hover {
     color: var(--basic-color-btn);
 }
 
-.navigation:active {
+.navigation-cart:active {
     color: var(--basic-color-txt);
-    opacity: 0.3;  
+    opacity: 0.3;
 }
 
 ul {
@@ -143,6 +170,38 @@ ul {
     width: 200px;
 }
 
+.page-button {
+    display: inline-block;
+    background: var(--basic-color-bg);
+    color: var(--second-color-txt);  
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.page-button:hover {
+    background: var(--gray-btn-hover);
+}
+
+.page-button:active {
+    background: var(--gray-btn-active);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.current,
+.current:hover,
+.current:active {
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 3px solid #DBDBDB
+}
+
+.forward {
+    width: 260px;
+}
+
 .template-name {
     font-style: normal;
     font-weight: bold;
@@ -193,14 +252,6 @@ ul {
 li:hover .panel {
     opacity: 1;
 }
-
-.main-header {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 55px;
-    line-height: 55px;
-    color: var(--second-color-txt);
-} 
 
 .textmidbold {
     font-style: normal;
