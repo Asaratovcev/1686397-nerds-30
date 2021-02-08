@@ -16,8 +16,8 @@
   <body class="page-body">
 
     <header class="main-header">
-
       <nav class="main-nav">
+        <div class="main-nav-wrapper">
         <a class="nerds-logo" href="index.html">
           <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
         </a>
@@ -27,7 +27,10 @@
           <li class="nav-list"><a class="navigation" href="catalog.html">Магазин</a></li>
           <li class="nav-list"><a class="navigation" href="#">Контакты</a></li>
         </ul>
-        <a class="navigation-cart" href="#">Корзина</a>
+        <div class="nav-cart">
+          <a class="cart" href="#">Корзина</a>
+        </div> 
+        </div> 
       </nav>
 
     </header>
@@ -49,32 +52,32 @@
           <input type="radio" name="slider">
         </form>
       </section>
-      <section>
+      <section class="services">
         <h2  class="visually-hidden">Услуги</h2>
-        <ul>
-          <li>
+        <ul class="services-list">
+          <li class="services-item">
            <img src="img/illustration-11.png" width="300" height="146" alt="Веб-сайты">
            <h3 class="service-title">Веб-сайты</h3>
-           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+           <p class="servises-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
            <button class="button" type="button">Заказать</button>
           </li>
-          <li>
+          <li class="services-item">
             <img src="img/illustration-21.png" width="300" height="146" alt="Приложения">
             <h3 class="service-title">Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <p class="servises-text">Покорите топ-10 приложений в AppStore и Google Play</p>
             <button class="button-green" type="button">Заказать</button>
            </li>
-           <li>
+           <li class="services-item">
             <img src="img/illustration-31.png" width="300" height="146" alt="Презентации">
             <h3 class="service-title">Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <p class="servises-text">Вы даже не подозреваете, насколько вы изумительны!</p>
             <button class="button-gold" type="button">Заказать</button>
            </li>
         </ul>
       </section>
-      <section>
+      <section class="about-columns">
         <h2  class="visually-hidden">О нас</h2>
-        <div>
+        <div class="about-article">
           <p class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="textbold">Выполняем заказы на разработку:</p>
@@ -84,10 +87,10 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div>
+        <div class="about-info">
           <img src="img/nerds-illustration1.png" width="360" height="208" alt="Логотип Нёрдс">
           <p class="textbold">с 2004 года Любим точность во всем:</p>
-          <dl>
+          <dl class="about-info-list">
             <dt class="textpercent">146<sup>%</sup></dt>
             <dd class="textsubpercent">Уровень самоотдачи</dd>
             <dt class="textpercent">100<sup>%</sup></dt>
@@ -99,7 +102,7 @@
       </section>
       <section>
         <h2  class="visually-hidden">Партнеры</h2>
-        <figure>
+        <figure class="partnership">
           <a class="partner-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-11.png" width="199" height="68" alt="HTML и CSS. Профессиональная вёрстка сайтов">
           </a>
@@ -119,15 +122,19 @@
     
     <footer class="main-footer">
 
-      <section>
-       <!-- Здесь будет карта -->
+      <section class="footer-contacts">
+       <!-- Здесь будет карта 
+       <figure class="map">
         <img src="img/map1.png" width="1440" height="416" alt="Карта с положением студии Нёрдс">
-        <h2 class="textfooterbold">NЁRDS DESIGN STUDIO</h2>
-        <p class="textfooter">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="textfooter">тел. +7 (812) 275-75-75</p>
-        <button class="button" type="button">НАПИШИТЕ НАМ</button>
+       </figure> -->
+       <div>
+          <h2 class="textfooterbold">NЁRDS DESIGN STUDIO</h2>
+          <p class="textfooter">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="textfooter">тел. +7 (812) 275-75-75</p>
+          <button class="button" type="button">НАПИШИТЕ НАМ</button>
+        </div>  
       </section>
-      <section>
+      <section class="footer-social">
         <ul>
           <li>
             <a class="social-button" href="#"><img src="img/vk-icon.png" alt="логотип vkontakte"></a>
@@ -139,9 +146,12 @@
             <a class="social-button" href="#"><img src="img/insta-icon.png" alt="логотип instagram"></a>
           </li>
         </ul>
-        <h2 class="textfooterbig">Давайте дружить, это выгодно!</h2>
-        <p class="textfootersmall">Скидка 10% для друзей из социальных сетей.</p>
       </section>
+        <div class="footer-text">
+          <h2 class="textfooterbig">Давайте дружить, это выгодно!</h2>
+          <p class="textfootersmall">Скидка 10% для друзей из социальных сетей.</p>
+        </div>  
+      
 
    </footer>
 

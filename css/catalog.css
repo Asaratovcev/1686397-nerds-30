@@ -43,6 +43,10 @@
     margin: -1px;
 }
 
+.page {
+    height: 100%;    
+}
+
 .page-body {
     font-family: "Roboto";
     font-size: 16px;
@@ -95,7 +99,7 @@
     opacity: 0.3;  
 }
 
-.navigation-cart {
+.cart {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -105,17 +109,13 @@
     text-decoration: none;
 }
 
-.navigation-cart:hover {
+.cart:hover {
     color: var(--basic-color-btn);
 }
 
-.navigation-cart:active {
+.cart:active {
     color: var(--basic-color-txt);
     opacity: 0.3;
-}
-
-.template-filter {
-    float: left;
 }
 
 .clearfix::after {
@@ -246,8 +246,6 @@ ul {
 
 .full-template {
     position: relative;
-    float: left;
-
 }
 
 .panel {
