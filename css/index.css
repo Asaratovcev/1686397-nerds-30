@@ -41,7 +41,6 @@
 
 .page {
     height: 100%;
-    width: 1440px;    
 }
 
 .page-body {
@@ -59,8 +58,6 @@
 .main-header {
     background-color: var(--basic-color-bg);
     text-align: center;
-    
-    margin-bottom: 70px;
 }
 
 .main-nav {
@@ -70,13 +67,13 @@
 .main-nav-wrapper {
     display: grid;
     grid-template-columns: min-content 1fr min-content;
-    width: 1158px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 .container {
-    width: 1158px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
   }
@@ -127,9 +124,32 @@
 .sliders {
     background-color: var(--basic-color-bg);
     margin-bottom: 80px;
+}
 
-    display: grid;
-    grid-template-columns: min-content 1fr;
+.slider-text {
+    width: 50%;
+}
+
+.slider-p {
+    width: 400px;
+}
+
+.slider1 {
+    background-image: url(../img/nerds-index-slide1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.slider2 {
+    background-image: url(../img/nerds-index-slide2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.slider3 {
+    background-image: url(../img/nerds-index-slide3.png);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .services {
@@ -173,19 +193,30 @@
 
 .main-footer {
     margin-top: 75px;
+}
+
+.main-footer-wrapper {
+    width: 1160px;
+    margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+}
+
+.map {
+    background-image: url(../img/map1.png);
+
 }
 
 .footer-contacts {
     width: 319px;
-    padding: 50px;
+    background-color: var(--color-btn);
+    margin: 54px 0;
 }
 
 .footer-social {
-    justify-self: center;
+    background-color: var(--basic-color-bg);
+    justify-self: left;
     text-align: center;
 
     grid-column-start: 1;
@@ -197,6 +228,10 @@
 
     grid-row-start: 2;
     grid-column-start: 2;
+}
+
+.footer-contacts-text {
+    margin: 50px 50px 0 50px;
 }
 
 ul {
@@ -281,6 +316,11 @@ ul {
     background: var(--gold-btn-active);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     color: rgba(255, 255, 255, 0.3);
+}
+
+.button-contacts {
+    width: 220px;
+    margin: 25px 50px 50px 50px;
 }
 
 .partner-logo {
