@@ -176,10 +176,10 @@
     column-gap: 150px;
 
     border-top: var(--basic-color-bg) solid 2px;
-    padding-top: 40px;
     width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
+    padding-top: 40px;
 }
 
 .about-info-list {
