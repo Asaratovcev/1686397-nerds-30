@@ -168,14 +168,20 @@
 }
 
 .pagination {
-    margin-left: 140px;
-
     grid-column-start: 2;
 }
 
 .pagination-list {
     padding: 0;
     margin: 0;
+    margin-top: 54px;
+
+    display:flex;
+    justify-content: flex-start;
+}
+
+.pagination-item {
+    margin-right: 10px;
 }
 
 .main-footer {
@@ -303,7 +309,8 @@ ul {
 .current:active {
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.0001);
-    border: 3px solid #DBDBDB
+    border: 3px solid #DBDBDB;
+    height: 50px;
 }
 
 .forward {

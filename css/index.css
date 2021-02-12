@@ -57,19 +57,19 @@
 
 .main-header {
     background-color: var(--basic-color-bg);
-    text-align: center;
 }
 
 .main-nav {
     background-color: var(--basic-color-bg);
 }
 
-.main-nav-wrapper {
-    display: grid;
-    grid-template-columns: min-content 1fr min-content;
+.nav-container {
     width: 1160px;
     margin: 0 auto;
-    padding: 0 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation {
@@ -83,8 +83,9 @@
 }
 
 .nav-list {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    min-width: 440px;
 }
 
 .navigation:hover {
@@ -129,7 +130,8 @@
 }
 
 .slider-text {
-    width: 50%;
+    width: 45%;
+    padding: 80px 0;
 }
 
 .slider-p {
@@ -157,29 +159,45 @@
 .services {
     width: 1160px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0;
     margin-bottom: 80px;
 }
 
 .services-list {
     margin: 0;
     padding: 0;
+    padding-right: 65px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-item {
+    width: 300px;
+}
+
+.servises-text {
+    margin-right: 40px;
 }
 
 .about-columns {
-    display: grid;
-    grid-template-columns: 650px 1fr;
-    column-gap: 150px;
-
     border-top: var(--basic-color-bg) solid 2px;
     width: 1160px;
     margin: 0 auto;
-    padding: 0 10px;
+    margin-bottom: 40px;
+    padding: 0;
     padding-top: 40px;
+    
+    display: flex;
+}
+
+.about-item {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.about-info {
+    margin-left: 150px;
 }
 
 .about-info-list {
@@ -195,10 +213,9 @@
     width: 1160px;
     margin: 0 auto;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 80px;
- 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-footer {
@@ -233,6 +250,12 @@
     grid-row-start: 2;
 }
 
+.footer-social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer-text {
     justify-self: center;
 
@@ -246,6 +269,8 @@
 
 ul {
     list-style-type: none;  
+    margin: 0;
+    padding: 0;
 }
 
 .button {
