@@ -17,21 +17,19 @@
 
     <header class="main-header">
       <nav class="main-nav">
-        <a class="nerds-logo" href="index.html">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
-        </a>
-        <div class="main-nav-wrapper">
-          <div class="nav-container">
-            <ul class="nav-list">
-              <li class="nav-list-item"><a class="navigation" href="#">Студия</a></li>
-              <li class="nav-list-item"><a class="navigation" href="#">Клиенты</a></li>
-              <li class="nav-list-item"><a class="navigation" href="catalog.html">Магазин</a></li>
-              <li class="nav-list-item"><a class="navigation" href="#">Контакты</a></li>
-            </ul>
-            <div class="nav-cart">
-              <a class="cart" href="#">Корзина</a>
-            </div>
-          </div> 
+        <div class="nav-container">
+          <a class="nerds-logo" href="index.html">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
+          </a>
+              <ul class="nav-list">
+                <li class="nav-list-item"><a class="navigation" href="#">Студия</a></li>
+                <li class="nav-list-item"><a class="navigation" href="#">Клиенты</a></li>
+                <li class="nav-list-item"><a class="navigation" href="catalog.html">Магазин</a></li>
+                <li class="nav-list-item"><a class="navigation" href="#">Контакты</a></li>
+              </ul>
+              <div class="nav-cart">
+                <a class="cart" href="#">Корзина</a>
+              </div>
         </div> 
       </nav>
     </header>
@@ -43,48 +41,48 @@
           <section class="template-filter">
               <h2  class="visually-hidden">Фильтр шаблонов</h2>
               <form method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
+                <fieldset class="catalog-fieldset">
                     <legend class="textmidbold">Стоимость:</legend>
                     <input type="range" min="0" max="15000" step="100" value="11000" id="price"> 
                     <p class="textformuppercase">от <input type="number" min="0" max="15000" placeholder="0"> до <input type="number" min="0" max="15000" placeholder="15 000"></p>
                 </fieldset>  
-                <fieldset>
-                  <legend class="textmidbold">Сетка</legend>
+                <fieldset class="catalog-fieldset">
+                  <legend class="textmidbold">Сетка:</legend>
                   <ul>
-                    <li>
+                    <li class="filter-item">
                       <input type="radio" name="grid" id="filter-adaptive" checked>
                       <label class="textform" for="filter-adaptive">Адаптивная</label>
                     </li>
-                    <li>
+                    <li class="filter-item">
                       <input type="radio" name="grid" id="filter-fixed">
                       <label class="textform" for="filter-fixed">Фиксированная</label>
                     </li>
-                    <li>
+                    <li class="filter-item">
                       <input type="radio" name="grid" id="filter-rubber">
                       <label class="textform" for="filter-rubber">Резиновая</label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="catalog-fieldset">
                   <legend class="textmidbold">Особенности:</legend>
                   <ul>
-                      <li>
+                      <li class="filter-item">
                         <input type="checkbox" name="slider" id="filter-slider" checked>
                         <label class="textform" for="filter-slider">Слайдер</label>
                       </li>
-                      <li>
+                      <li class="filter-item">
                         <input type="checkbox" name="advantage" id="filter-advantage">
                         <label class="textform" for="filter-advantage">Блок преимуществ</label>
                       </li>
-                      <li>
+                      <li class="filter-item">
                         <input type="checkbox" name="news" id="filter-news" checked>
                         <label class="textform" for="filter-news">Новости</label>
                       </li>
-                      <li>
+                      <li class="filter-item">
                         <input type="checkbox" name="gallery" id="filter-gallery">
                         <label class="textform" for="filter-gallery">Галерея</label>
                       </li>
-                      <li>
+                      <li class="filter-item">
                         <input type="checkbox" name="basket" id="filter-basket">
                         <label class="textform" for="filter-basket">Корзина</label>
                       </li>
@@ -95,7 +93,7 @@
           </section>  
           <section class="template-sortby">
                 <h2 class="textmidbold">Сортировать:</h2>
-                <ul>
+                <ul class="sortby-list">
                     <li class="sortby-item"><a class="sortby" href="#">По цене</a></li>
                     <li class="sortby-item"><a class="sortby" href="#">По типу</a></li>
                     <li class="sortby-item"><a class="sortby" href="#">По названию</a></li>
@@ -208,6 +206,7 @@
     </main>
     
     <footer class="main-footer">
+
       <figure class="map"> 
         <div class="main-footer-wrapper">
           <section class="footer-contacts">
@@ -223,14 +222,14 @@
       </figure>    
       <div class="main-footer-wrapper">
           <section class="footer-social">
-            <ul>
-              <li>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
                 <a class="social-button" href="#"><img src="img/vk-icon.png" alt="логотип vkontakte"></a>
               </li>
-              <li>
+              <li class="footer-social-item">
                 <a class="social-button" href="#"><img src="img/fb-icon.png" alt="логотип facebook"></a>
               </li>
-              <li>
+              <li class="footer-social-item">
                 <a class="social-button" href="#"><img src="img/insta-icon.png" alt="логотип instagram"></a>
               </li>
             </ul>

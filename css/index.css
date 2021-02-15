@@ -260,10 +260,24 @@
 
 .footer-social-list {
     display: flex;
+
+    margin-right: 130px;
 }
 
 .footer-social-item {
+    background-color: var(--basic-color-bg);
+    border-radius: 50%;
     width: 81px;
+    height: 81px;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socal-button {
+    vertical-align: middle;
 }
 
 .footer-text {
@@ -366,14 +380,6 @@ ul {
 .button-contacts {
     width: 220px;
     margin: 25px 50px 50px 50px;
-}
-
-.social-button {
-    background-image: url(../img/Shape.svg);
-    background-position: center;
-    margin: 0 10px;
-    padding: 30px;
-
 }
 
 .partner-logo {
