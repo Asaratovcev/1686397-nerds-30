@@ -84,8 +84,12 @@
 
 .nav-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     min-width: 440px;
+}
+
+.nav-list-item {
+    margin: 0 45px;
 }
 
 .navigation:hover {
@@ -189,6 +193,11 @@
     padding-top: 40px;
     
     display: flex;
+
+}
+
+.about-article {
+    width: 650px;
 }
 
 .about-item {
@@ -198,12 +207,13 @@
 
 .about-info {
     margin-left: 150px;
+    width: 360px;
 }
 
 .about-info-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 .partnership {
@@ -214,6 +224,7 @@
     margin: 0 auto;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -227,7 +238,8 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    align-items: center;
 }
 
 .map {
@@ -242,18 +254,16 @@
 }
 
 .footer-social {
-    background-color: var(--basic-color-bg);
-    justify-self: left;
-    text-align: center;
-
     grid-column-start: 1;
     grid-row-start: 2;
 }
 
 .footer-social-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.footer-social-item {
+    width: 81px;
 }
 
 .footer-text {
@@ -356,6 +366,14 @@ ul {
 .button-contacts {
     width: 220px;
     margin: 25px 50px 50px 50px;
+}
+
+.social-button {
+    background-image: url(../img/Shape.svg);
+    background-position: center;
+    margin: 0 10px;
+    padding: 30px;
+
 }
 
 .partner-logo {
