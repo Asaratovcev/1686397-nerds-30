@@ -229,8 +229,9 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
+    column-gap: 40px;
 }
 
 .map {
@@ -251,8 +252,6 @@
 
 .footer-social-list {
     display: flex;
-
-    margin-right: 130px;
 }
 
 .footer-social-item {
@@ -272,8 +271,6 @@
 }
 
 .footer-text {
-    justify-self: center;
-
     grid-row-start: 2;
     grid-column-start: 2;
 }
