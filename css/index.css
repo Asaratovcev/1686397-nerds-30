@@ -95,7 +95,7 @@
 }
 
 .nav-list-item {
-    margin: 0 45px;
+    margin: 0 23px;
 }
 
 .navigation:hover {
@@ -107,11 +107,15 @@
     opacity: 0.3;  
 }
 
+.nav-cart {
+    margin-top: 11px;
+}
+
 .cart::before {
     content: "";
     position: absolute;
     top: 2px;
-    right: 95px;
+    right: 100px;
     width: 16px;
     height: 18px;
     background-image: url("../img/cart-icon.svg");
@@ -149,16 +153,16 @@
     width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
 }
 
 .slider-text {
     width: 45%;
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 .slider-p {
-    width: 400px;
+    width: 367px;
 }
 
 .slider1 {
@@ -192,7 +196,7 @@
     left: 0;
     right: 0;
     position: relative;
-    top: -96px;
+    top: -102px;
 
     z-index: 20;
     display: flex;
@@ -225,7 +229,7 @@
 .services-list {
     margin: 0;
     padding: 0;
-    padding-right: 65px;
+    padding-right: 60px;
 
     display: flex;
     justify-content: space-between;
@@ -235,8 +239,9 @@
     width: 300px;
 }
 
-.servises-text {
+.services-text {
     margin-right: 40px;
+    margin-bottom: 33px;
 }
 
 .about-columns {
@@ -256,7 +261,7 @@
 }
 
 .about-item {
-    margin-bottom: 10px;
+    margin-bottom: 23px;
     margin-left: 20px;
 }
 
@@ -265,10 +270,17 @@
     width: 360px;
 }
 
+.about-list {
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 0;
+}
+
 .about-info-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
+    row-gap: 13px;
 }
 
 .partnership {
@@ -277,7 +289,7 @@
     padding: 45px;
     width: 1160px;
     margin: 0 auto;
-
+  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -293,7 +305,7 @@
 }
 
 .main-footer {
-    margin-top: 75px;
+    margin-top: 65px;
     margin-bottom: 75px;
 }
 
@@ -302,7 +314,7 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 2fr;
     align-items: center;
     column-gap: 40px;
 }
@@ -321,11 +333,14 @@
 .footer-social {
     grid-column-start: 1;
     grid-row-start: 2;
+
+    margin-top: 20px;
 }
 
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .social-button {
@@ -357,10 +372,17 @@
 .footer-text {
     grid-row-start: 2;
     grid-column-start: 2;
+
+    margin-left: 87px;
 }
 
 .footer-contacts-text {
-    margin: 50px 50px 0 50px;
+    margin: 57px 50px 0 50px;
+}
+
+.map {
+    margin: 0;
+    margin-bottom: 42px;
 }
 
 .modal {
@@ -369,7 +391,7 @@
     z-index: 1000;
     pointer-events: none;
     width: 960px;
-    height: 590px;
+    min-height: 590px;
     padding: 0;
     margin: auto;
     left: 0;
@@ -377,9 +399,6 @@
     opacity: 0;
     background-color: var(--color-btn);
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
-
-    display:grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .modal:target {
@@ -391,12 +410,13 @@
     justify-self: flex-end;
     background-color: var(--color-btn);
     padding: 0;
-    margin-top: 78px;
-    margin-right: 90px;
     border: 0;
     width: 21px;
     height: 21px;
     opacity: 0.3;
+    position: absolute;
+    top: 78px;
+    right: 90px;
 }
 
 .modal-close:hover {
@@ -494,12 +514,14 @@
 
 ul {
     list-style-type: none;  
-    margin: 0;
+    margin: 0px 138px;
     padding: 0;
+    margin-right: 223px;
+    margin-top: 10px;
 }
 
 .button {
-    width: 240px;
+    /*width: 240px;*/
     padding: 17px 40px 15px 39px;
     background: var(--basic-color-btn);
     border-radius: 3px;
@@ -513,7 +535,7 @@ ul {
 } 
 
 .button-modal {
-    width: 260px;
+    min-width: 260px;
 }
 
 .button-more {
@@ -523,6 +545,7 @@ ul {
     color: var(--color-btn);  
     text-decoration: none;
     text-align: center;
+    margin-top: 10px;
 }
 
 .button:hover {
@@ -536,7 +559,6 @@ ul {
 } 
 
 .button-red {
-    width: 160px;
     padding: 17px 40px 15px 39px;
     background: var(--basic-color-btn);
     border-radius: 3px;
@@ -559,7 +581,6 @@ ul {
 }
 
 .button-green {
-    width: 160px;
     padding: 17px 40px 15px 39px;
     background: var(--green-btn);
     border-radius: 3px;
@@ -582,7 +603,6 @@ ul {
 }
 
 .button-gold {
-    width: 160px;
     padding: 17px 40px 15px 39px;
     background: var(--gold-btn);
     border-radius: 3px;
@@ -608,11 +628,16 @@ ul {
     text-decoration: none;
     display: block;
     width: 220px;
-    margin: 25px 50px 50px 50px;
+    margin: 40px 50px 50px 48px;
+    padding-left: 46px;
 }
 
 .partner-logo {
     opacity: 0.2;
+    position: relative;
+    margin-left: 31px;
+    margin-right: 45px;
+    margin-top: 12px;
 }
 
 .partner-logo:hover {
@@ -623,6 +648,22 @@ ul {
     opacity: 0.1;
 }
 
+.partner-logo::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    background-image: url("../img/Rectangle.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 250px;
+    opacity: 1;
+}
+
+.partner-logo:nth-child(4n+4)::after {
+    background-image: none;
+}
+
 .slider-title {
     font-style: normal;
     font-weight: 500;
@@ -630,6 +671,7 @@ ul {
     line-height: 55px;
     color: var(--second-color-txt);
     margin-top: 0;
+    margin-bottom: 40px;
 } 
 
 .about-title {
@@ -638,6 +680,7 @@ ul {
     font-size: 45px;
     line-height: 45px;
     color: var(--second-color-txt);
+    margin: 35px 0;
 }
 
 .service-title {
@@ -647,6 +690,7 @@ ul {
     line-height: 30px;
     color: var(--second-color-txt);
     text-transform: uppercase; 
+    margin: 17px 2px;
 }
 
 .textbold {
@@ -655,6 +699,16 @@ ul {
     font-size: 16px;
     line-height: 24px; 
     text-transform: uppercase;
+    margin-top: 39px;
+}
+
+.about-info-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px; 
+    text-transform: uppercase;
+    margin: 29px 0 31px 18px;
 }
 
 .textpercent {
@@ -693,6 +747,8 @@ ul {
     font-size: 16px;
     line-height: 18px;
     color: var(--gray-txt);
+    margin-right: 10px;
+    margin-top: 21px;
 }
 
 .textfooterbig {
@@ -701,6 +757,7 @@ ul {
     font-size: 36px;
     line-height: 36px;
     color: var(--second-color-txt);
+    margin-bottom: 0;
 }
 
 .textfootersmall {
@@ -709,6 +766,7 @@ ul {
     font-size: 16px;
     line-height: 22px;
     color: var(--darkgray-txt);
+    margin-top: 10px;
 }
 
 .feedback-title {
@@ -719,6 +777,7 @@ ul {
     color: var(--second-color-txt);
     margin-left: 100px;
     margin-top: 63px;
+    margin-right: 100px;
 }
 
 .feedback-name {
