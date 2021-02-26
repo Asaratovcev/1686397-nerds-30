@@ -153,7 +153,7 @@
     width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
 }
 
 .slider-text {
@@ -162,25 +162,33 @@
 }
 
 .slider-p {
-    width: 367px;
+    width: 368px;
+    margin: 0;
+    padding: 0;
 }
 
 .slider1 {
     background-image: url(../img/nerds-index-slide1.png);
     background-position: right;
     background-repeat: no-repeat;
+    padding-bottom: 10px;
+    margin-bottom: -17px;
 }
 
 .slider2 {
     background-image: url(../img/nerds-index-slide2.png);
     background-position: right;
     background-repeat: no-repeat;
+    padding-bottom: 10px;
+    margin-bottom: -17px;
 }
 
 .slider3 {
     background-image: url(../img/nerds-index-slide3.png);
     background-position: right;
     background-repeat: no-repeat;
+    padding-bottom: 10px;
+    margin-bottom: -17px;
 }
 
 .slide {
@@ -223,7 +231,7 @@
     width: 1160px;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
 }
 
 .services-list {
@@ -286,13 +294,16 @@
 .partnership {
     border-top: var(--basic-color-bg) solid 2px;
     border-bottom: var(--basic-color-bg) solid 2px;
-    padding: 45px;
     width: 1160px;
     margin: 0 auto;
-  
+    margin-top: 49px;
+    margin-bottom: 16px;
+    padding-top: 48px;
+    padding-bottom: 33px;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -321,7 +332,12 @@
 
 .map {
     background-image: url(../img/map1.png);
+}
 
+.map-marker {
+    position:relative;
+    right: -323px;
+    top: -28px;
 }
 
 .footer-contacts {
@@ -377,7 +393,7 @@
 }
 
 .footer-contacts-text {
-    margin: 57px 50px 0 50px;
+    margin: 48px 50px 0 50px;
 }
 
 .map {
@@ -545,7 +561,7 @@ ul {
     color: var(--color-btn);  
     text-decoration: none;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 37px;
 }
 
 .button:hover {
@@ -633,18 +649,18 @@ ul {
 }
 
 .partner-logo {
-    opacity: 0.2;
     position: relative;
-    margin-left: 31px;
-    margin-right: 45px;
-    margin-top: 12px;
 }
 
-.partner-logo:hover {
+.partner-logo-img {
+    opacity: 0.2;
+}
+
+.partner-logo-img:hover {
     opacity: 1;
 }
 
-.partner-logo:active {
+.partner-logo-img:active {
     opacity: 0.1;
 }
 
@@ -653,15 +669,14 @@ ul {
     position: absolute;
     width: 2px;
     height: 52px;
-    background-image: url("../img/Rectangle.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    left: 250px;
-    opacity: 1;
+    background-color: var(--basic-color-bg);
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .partner-logo:nth-child(4n+4)::after {
-    background-image: none;
+    opacity: 0;
 }
 
 .slider-title {
@@ -671,7 +686,7 @@ ul {
     line-height: 55px;
     color: var(--second-color-txt);
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 } 
 
 .about-title {
@@ -748,7 +763,7 @@ ul {
     line-height: 18px;
     color: var(--gray-txt);
     margin-right: 10px;
-    margin-top: 21px;
+    margin-top: 19px;
 }
 
 .textfooterbig {
