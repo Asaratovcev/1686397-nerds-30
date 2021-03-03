@@ -222,7 +222,7 @@
     cursor: pointer;
   }
 
-  .slider-controls .current {
+.slider-controls .current {
     border: 2px solid #C1C1C1;
 
   }
@@ -261,7 +261,6 @@
     padding-top: 40px;
     
     display: flex;
-
 }
 
 .about-article {
@@ -332,6 +331,8 @@
 
 .map {
     background-image: url(../img/map1.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .map-marker {

@@ -24,7 +24,7 @@
               <ul class="nav-list">
                 <li class="nav-list-item"><a class="navigation" href="#">Студия</a></li>
                 <li class="nav-list-item"><a class="navigation" href="#">Клиенты</a></li>
-                <li class="nav-list-item"><a class="navigation" href="catalog.html">Магазин</a></li>
+                <li class="nav-list-item nav-list-item-current"><a class="navigation" href="catalog.html">Магазин</a></li>
                 <li class="nav-list-item"><a class="navigation" href="#">Контакты</a></li>
               </ul>
               <div class="nav-cart">
@@ -42,48 +42,70 @@
               <h2  class="visually-hidden">Фильтр шаблонов</h2>
               <form method="get" action="https://echo.htmlacademy.ru">
                 <fieldset class="catalog-fieldset">
-                    <legend class="textmidbold">Стоимость:</legend>
-                    <input type="range" min="0" max="15000" step="100" value="11000" id="price"> 
-                    <p class="textformuppercase">от <input type="number" min="0" max="15000" placeholder="0"> до <input type="number" min="0" max="15000" placeholder="15 000"></p>
+                  <legend class="textmidbold">Стоимость:</legend>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar" style="
+                        width: 60%;
+                        margin-left: 5%
+                      "></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0" style="
+                      left: 7%
+                    "></div>
+                    <div class="toggle toggle-max" tabindex="0" style="
+                      left: 62%
+                    "></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">
+                        от <input type="number" name="min-price" value="0">
+                      </label>
+                      <label class="max-price">
+                        до <input type="number" name="max-price" value="15000">
+                      </label>
+                    </div>
+                  </div>
                 </fieldset>  
-                <fieldset class="catalog-fieldset">
+                <fieldset class="catalog-fieldset-radio">
                   <legend class="textmidbold">Сетка:</legend>
-                  <ul>
-                    <li class="filter-item">
-                      <input type="radio" name="grid" id="filter-adaptive" checked>
+                  <ul class="radio-list">
+                    <li class="filter-item-radio">
+                      <input class="item-radio visually-hidden" type="radio" name="grid" id="filter-adaptive" checked>
                       <label class="textform" for="filter-adaptive">Адаптивная</label>
                     </li>
-                    <li class="filter-item">
-                      <input type="radio" name="grid" id="filter-fixed">
+                    <li class="filter-item-radio">
+                      <input class="item-radio visually-hidden" type="radio" name="grid" id="filter-fixed">
                       <label class="textform" for="filter-fixed">Фиксированная</label>
                     </li>
-                    <li class="filter-item">
-                      <input type="radio" name="grid" id="filter-rubber">
+                    <li class="filter-item-radio">
+                      <input class="item-radio visually-hidden" type="radio" name="grid" id="filter-rubber">
                       <label class="textform" for="filter-rubber">Резиновая</label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="catalog-fieldset">
+                <fieldset class="catalog-fieldset-checkbox">
                   <legend class="textmidbold">Особенности:</legend>
-                  <ul>
-                      <li class="filter-item">
-                        <input type="checkbox" name="slider" id="filter-slider" checked>
+                  <ul class="checkbox-list">
+                      <li class="filter-item-checkbox">
+                        <input class="item-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
                         <label class="textform" for="filter-slider">Слайдер</label>
                       </li>
-                      <li class="filter-item">
-                        <input type="checkbox" name="advantage" id="filter-advantage">
+                      <li class="filter-item-checkbox">
+                        <input class="item-checkbox visually-hidden" type="checkbox" name="advantage" id="filter-advantage">
                         <label class="textform" for="filter-advantage">Блок преимуществ</label>
                       </li>
-                      <li class="filter-item">
-                        <input type="checkbox" name="news" id="filter-news" checked>
+                      <li class="filter-item-checkbox">
+                        <input class="item-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked>
                         <label class="textform" for="filter-news">Новости</label>
                       </li>
-                      <li class="filter-item">
-                        <input type="checkbox" name="gallery" id="filter-gallery">
+                      <li class="filter-item-checkbox">
+                        <input class="item-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                         <label class="textform" for="filter-gallery">Галерея</label>
                       </li>
-                      <li class="filter-item">
-                        <input type="checkbox" name="basket" id="filter-basket">
+                      <li class="filter-item-checkbox">
+                        <input class="item-checkbox visually-hidden" type="checkbox" name="basket" id="filter-basket">
                         <label class="textform" for="filter-basket">Корзина</label>
                       </li>
                   </ul>
@@ -97,8 +119,8 @@
                     <li class="sortby-item"><a class="sortby" href="#">По цене</a></li>
                     <li class="sortby-item"><a class="sortby" href="#">По типу</a></li>
                     <li class="sortby-item"><a class="sortby" href="#">По названию</a></li>
-                    <li class="sortby-item"><button class="downbutton" type="button">down</button></li>
-                    <li class="sortby-item"><button class="upbutton" type="button">up</button></li>
+                    <li class="sortby-item"><button class="downbutton" type="button"></button></li>
+                    <li class="sortby-item"><button class="upbutton" type="button"></button></li>
                 </ul>
           </section>
           <section class="template-section">
@@ -218,6 +240,7 @@
             </div>  
               <button class="button button-contacts" type="button">НАПИШИТЕ НАМ</button>
           </section>
+          <img class="map-marker" src="/img/map-marker.png" alt="Студия здесь">
         </div>  
       </figure>    
       <div class="main-footer-wrapper">
