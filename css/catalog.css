@@ -640,7 +640,6 @@ ul {
 .button-contacts {
     text-decoration: none;
     display: block;
-    width: 220px;
     margin: 37px 50px 50px 48px;
     padding-left: 46px;
 }
@@ -735,7 +734,7 @@ li:hover .panel {
     margin-right: 0;
 }
 
-.filter-item-checkbox::before {
+.item-checkbox + label::before {
     content: "";
     display: block;
     position: absolute;
@@ -746,6 +745,10 @@ li:hover .panel {
     border-radius: 5px;
     box-sizing: border-box;
     opacity: 0.4;
+}
+
+.item-checkbox:hover + label::before {
+    opacity: 1;
 }
 
 .item-checkbox:checked + label::after {
@@ -763,6 +766,10 @@ li:hover .panel {
     opacity: 0.4;
 }
 
+.item-checkbox:hover + label::after {
+    opacity: 1;
+}
+
 .radio-list {
     margin-left: 37px;
     margin-top: 15px;
@@ -774,14 +781,14 @@ li:hover .panel {
 }
 
 .filter-item-radio:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .filter-item-radio:disabled {
     opacity: 0.3;
 }
 
-.filter-item-radio::before {
+.item-radio + label::before {
     content: "";
     display: block;
     position: absolute;
@@ -792,6 +799,10 @@ li:hover .panel {
     border-radius: 50%;
     box-sizing: border-box;
     opacity: 0.4;
+}
+
+.item-radio:hover + label::before {
+    opacity: 1;
 }
 
 .item-radio:checked + label::after {
@@ -807,6 +818,10 @@ li:hover .panel {
     margin: 0;
     padding: 0;
     opacity: 0.4;
+}
+
+.item-radio:hover + label::after {
+    opacity: 1;
 }
 
 .sortby {
