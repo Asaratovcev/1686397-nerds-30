@@ -44,7 +44,7 @@
 }
 
 .page-body {
-    font-family: "Roboto";
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: var(--basic-color-txt);
@@ -270,6 +270,17 @@
 .about-item {
     margin-bottom: 23px;
     margin-left: 20px;
+    position: relative;
+}
+
+.about-item::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: var(--basic-color-btn);
+    top: 14px;
+    left: -36px;
 }
 
 .about-info {
