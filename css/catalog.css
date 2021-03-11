@@ -54,7 +54,7 @@
 }
 
 .page-body {
-    font-family: "Roboto";
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: var(--basic-color-txt);
@@ -96,6 +96,7 @@
     color: var(--second-color-txt);
     text-decoration: none;  
     display: block;
+    position: relative;
 }
 
 .nav-list {
@@ -122,7 +123,7 @@
     content: "";
     position: absolute;
     bottom: -17px;
-    width: 73px;
+    width: 100%;
     height: 2px;
     background-color: var(--basic-btn-active);
 }
@@ -138,6 +139,7 @@
 
 .nav-cart {
     margin-top: 11px;
+    position: relative;
 }
 
 .cart::before {
