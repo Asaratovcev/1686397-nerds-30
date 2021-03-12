@@ -40,7 +40,7 @@
         <div class="page-catalog">
           <section class="template-filter">
               <h2  class="visually-hidden">Фильтр шаблонов</h2>
-              <form method="get" action="https://echo.htmlacademy.ru">
+              <form method="get" action="https://echo.htmlacademy.ru" target="_blank">
                 <fieldset class="catalog-fieldset">
                   <legend class="textmidbold">Стоимость:</legend>
                   <div class="range-filter">
@@ -136,7 +136,7 @@
                       <div class="subdiv">
                       <p class="template-name">SEDONA</p>
                       <p class="textmidpopup">Информационный сайт для туристов</p>
-                      <button class="button button-template" type="button">9 900 ₽</button>
+                      <button class="button button-template" type="button" aria-label="Заказать дизайн сайта SEDONA">9 900 ₽</button>
                       </div> 
                     </div>    
                     </li>   
@@ -149,7 +149,7 @@
                         <div class="subdiv">
                           <p class="template-name">PINK APP</p>
                           <p class="textmidpopup">Продуктовый лендинг приложения для iOS и Android</p>
-                          <button class="button button-template" type="button">9 900 ₽</button>
+                          <button class="button button-template" type="button" aria-label="Заказать дизайн сайта PINK APP">9 900 ₽</button>
                         </div>
                       </div>         
                       </li>
@@ -163,7 +163,7 @@
                           <div class="subdiv">
                               <p class="template-name">BARBERSHOP</p>
                               <p class="textmidpopup">Сайт салона красоты. Для мужчин, да.</p>
-                              <button class="button button-template" type="button">9 900 ₽</button>
+                              <button class="button button-template" type="button" aria-label="Заказать дизайн сайта BARBERSHOP">9 900 ₽</button>
                           </div> 
                         </div>        
                       </li>
@@ -176,7 +176,7 @@
                           <div class="subdiv">
                               <p class="template-name">MISHKA</p>
                               <p class="textmidpopup">Интернет-магазин вязаных игрушек</p>
-                              <button class="button button-template" type="button">9 900 ₽</button>
+                              <button class="button button-template" type="button" aria-label="Заказать дизайн сайта MISHKA">9 900 ₽</button>
                           </div>
                         </div>         
                       </li>
@@ -189,7 +189,7 @@
                           <div class="subdiv">
                               <p class="template-name">A PLUS</p>
                               <p class="textmidpopup">Лендинг курсов повышения квалификации</p>
-                              <button class="button button-template" type="button">9 900 ₽</button>
+                              <button class="button button-template" type="button" aria-label="Заказать дизайн сайта A PLUS">9 900 ₽</button>
                           </div>
                         </div>         
                       </li>
@@ -202,7 +202,7 @@
                           <div class="subdiv">
                               <p class="template-name">КВАСТ</p>
                               <p class="textmidpopup">Промо-сайт производителя крафтового кваса</p>
-                              <button class="button button-template" type="button">9 900 ₽</button>
+                              <button class="button button-template" type="button" aria-label="Заказать дизайн сайта КВАСТ">9 900 ₽</button>
                           </div>
                         </div>         
                       </li>
@@ -247,13 +247,22 @@
           <section class="footer-social">
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="social-button" href="#"><img src="img/vk-icon.png" alt="логотип vkontakte"></a>
+            <a class="social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              <svg aria-hidden="true" focusable="false" width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
+            </a>
               </li>
               <li class="footer-social-item">
-                <a class="social-button" href="#"><img src="img/fb-icon.png" alt="логотип facebook"></a>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg aria-hidden="true" focusable="false" width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
+                </a>
               </li>
               <li class="footer-social-item">
-                <a class="social-button" href="#"><img src="img/insta-icon.png" alt="логотип instagram"></a>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Инстаграм</span>
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
+                </a>
               </li>
             </ul>
           </section>
@@ -267,12 +276,10 @@
   
      <section id="openmodal" class="modal">
       <h2 class="feedback-title">Напишите нам</h2>
-      <a href="#close" title="Close" class="modal-close">
-        <span class="close-cross">
-          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a href="#close" title="Закрыть окно" class="modal-close">
+          <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z" fill="#FB565A"/>
           </svg>
-        </span>
       </a>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post" id="mailform">
         <div class="form-name">
@@ -288,7 +295,7 @@
           <textarea class="form-textarea" id="lettertext" name="text" form="mailform" rows="4" placeholder="В свободной форме"></textarea>
         </div>
         <div class="form-button">
-          <button class="button button-modal" type="submit">Отправить</button>
+          <button class="button button-modal" type="submit" aria-label="Отправить письмо">Отправить</button>
         </div>  
       </form>
   </section>
