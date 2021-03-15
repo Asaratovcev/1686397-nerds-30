@@ -112,7 +112,7 @@
 }
 
 .nav-list-item {
-    margin: 0 23px;
+    margin: 19px 23px 20px;
 }
 
 .nav-list-item-current {
@@ -186,7 +186,7 @@
 
 .page-title {
     margin-top: 0;
-    padding: 73px 210px 110px 210px;
+    padding: 68px 210px 110px 210px;
     background-color: var(--basic-color-bg);
     text-align: center;
     font-weight: 500;
@@ -278,6 +278,7 @@
     width: 11px;
     height: 11px;
     opacity: 0.3;
+    cursor: pointer;
 }
 
 .upbutton:hover {
@@ -298,6 +299,7 @@
     width: 11px;
     height: 11px;
     opacity: 0.3;
+    cursor: pointer;
 }
 
 .downbutton:hover {
@@ -330,6 +332,7 @@
 .main-footer {
     margin-top: 57px;
     margin-bottom: 75px;
+    position: relative;
 }
 
 .main-footer-wrapper {
@@ -343,12 +346,19 @@
 }
 
 .map {
-    background-image: url(../img/map1.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
+    height: 416px;
+    width: 100%;
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
 }
+
+.map-bg {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+}
+
 
 .map-marker {
     position:relative;
@@ -360,6 +370,7 @@
     width: 319px;
     background-color: var(--color-btn);
     margin: 54px 0;
+    z-index: 100;
 }
 
 .footer-social {
@@ -437,6 +448,7 @@
     position: absolute;
     top: 78px;
     right: 90px;
+    cursor: pointer;
 }
 
 .modal-close:hover {
@@ -518,7 +530,17 @@
     color: var(--basic-color-btn);
 }
 
-.form-input {
+.form-input-name {
+    width: 360px;
+    min-height: 50px;
+    padding: 16px 0;
+    padding-left: 16px;
+    border: 2px solid #D7DCDE;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.form-input-mail {
     width: 360px;
     min-height: 50px;
     padding: 16px 0;
@@ -565,16 +587,6 @@ ul {
     min-width: 260px;
 }
 
-.button-more {
-    padding: 17px 54px 15px;
-    display: inline-block;
-    background: var(--basic-color-btn);
-    color: var(--color-btn);  
-    text-decoration: none;
-    text-align: center;
-    margin-top: 37px;
-}
-
 .button:hover {
     background: var(--basic-btn-hover);
 } 
@@ -595,6 +607,7 @@ ul {
     text-transform: uppercase;
     color: var(--second-color-txt);
     border: none;
+    cursor: pointer;
 }
 
 .buttonform:hover {
@@ -609,6 +622,7 @@ ul {
 
 .button-template {
     padding: 17px 72px 15px 72px;
+    cursor: pointer;
 }
 
 .page-button {
@@ -619,6 +633,7 @@ ul {
     width: 50px;
     text-decoration: none;
     text-align: center;
+    vertical-align: middle;
 }
 
 .page-button:hover {
@@ -646,6 +661,7 @@ ul {
     display: block;
     margin: 37px 50px 50px 48px;
     padding-left: 46px;
+    cursor: pointer;
 }
 
 .forward {
@@ -751,6 +767,10 @@ li:hover .panel {
     opacity: 0.4;
 }
 
+.item-checkbox:focus + label::before {
+    outline: 3px solid var(--second-color-txt);
+}
+
 .item-checkbox:hover + label::before {
     opacity: 1;
 }
@@ -803,6 +823,10 @@ li:hover .panel {
     border-radius: 50%;
     box-sizing: border-box;
     opacity: 0.4;
+}
+
+.item-radio:focus + label::before {
+    outline: 3px solid var(--second-color-txt);
 }
 
 .item-radio:hover + label::before {
@@ -994,9 +1018,8 @@ li:hover .panel {
 }
 
 .price-controls input {
-    width: 67px;
+    width: 58px;
     padding: 10px;
-    padding-right: 0;
     margin-left: 10px;
     text-align: center;
     color: #283136;
@@ -1007,6 +1030,10 @@ li:hover .panel {
     font-size: inherit;
 }
 
+.input-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 @keyframes bounce {
     0% {

@@ -46,24 +46,20 @@
                   <div class="range-filter">
                     <div class="range-controls">
                       <div class="scale">
-                        <div class="bar" style="
-                        width: 60%;
-                        margin-left: 5%
-                      "></div>
+                        <div class="bar" style="width: 60%;margin-left: 5%">
+                        </div>
                       </div>
-                      <div class="toggle toggle-min" tabindex="0" style="
-                      left: 7%
-                    "></div>
-                    <div class="toggle toggle-max" tabindex="0" style="
-                      left: 62%
-                    "></div>
+                     <div class="toggle toggle-min" tabindex="0" style="left: 7%" aria-label="Минимальная стоимость">
+                     </div>
+                     <div class="toggle toggle-max" tabindex="0" style="left: 62%" aria-label="Максимальная стоимость">
+                     </div>
                     </div>
                     <div class="price-controls">
                       <label class="min-price">
-                        от <input type="number" name="min-price" value="0">
+                        от <input class="input-number" type="number" name="min-price" value="0">
                       </label>
                       <label class="max-price">
-                        до <input type="number" name="max-price" value="15000">
+                        до <input class="input-number" type="number" name="max-price" value="15000">
                       </label>
                     </div>
                   </div>
@@ -119,8 +115,8 @@
                     <li class="sortby-item"><a class="sortby" href="#">По цене</a></li>
                     <li class="sortby-item"><a class="sortby" href="#">По типу</a></li>
                     <li class="sortby-item"><a class="sortby" href="#">По названию</a></li>
-                    <li class="sortby-item"><button class="downbutton" type="button"></button></li>
-                    <li class="sortby-item"><button class="upbutton" type="button"></button></li>
+                    <li class="sortby-item"><button class="downbutton" type="button" aria-label="Сортировать по убыванию"></button></li>
+                    <li class="sortby-item"><button class="upbutton" type="button" aria-label="Сортировать по возрастанию"></button></li>
                 </ul>
           </section>
           <section class="template-section">
@@ -211,16 +207,16 @@
               <div class="pagination">
                   <ul class="pagination-list">
                       <li class="pagination-item">
-                        <a class="button page-button current">1</a>
+                        <a class="button page-button current" aria-label="Первая страница">1</a>
                       </li>
                       <li class="pagination-item">
-                        <a class="button page-button" href="#">2</a>
+                        <a class="button page-button" href="#"  aria-label="Вторая страница">2</a>
                       </li>
                       <li class="pagination-item">
-                        <a class="button page-button" href="#">3</a>
+                        <a class="button page-button" href="#"  aria-label="Третья страница">3</a>
                       </li>
                       <li class="pagination-item">
-                        <a class="button page-button forward" href="#">СЛЕДУЮЩАЯ</a>
+                        <a class="button page-button forward" href="#" aria-label="Следующая страница">СЛЕДУЮЩАЯ</a>
                       </li>
                     </ul>
                 </div>
@@ -230,6 +226,7 @@
     <footer class="main-footer">
 
       <figure class="map"> 
+        <iframe id="map" class="map-bg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615768935618!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
         <div class="main-footer-wrapper">
           <section class="footer-contacts">
           <!-- Здесь будет карта  -->
@@ -240,7 +237,7 @@
             </div>  
             <button class="button button-contacts" aria-label="Открыть окно для заполнения">НАПИШИТЕ НАМ</button>
           </section>
-          <img class="map-marker" src="/img/map-marker.png" alt="Студия здесь">
+          <img class="map-marker" src="/img/marker.png" alt="Студия здесь">
         </div>  
       </figure>    
       <div class="main-footer-wrapper">

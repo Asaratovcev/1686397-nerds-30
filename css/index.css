@@ -306,9 +306,9 @@
     border-bottom: var(--basic-color-bg) solid 2px;
     width: 1160px;
     margin: 0 auto;
-    margin-top: 49px;
+    margin-top: 54px;
     margin-bottom: 16px;
-    padding-top: 48px;
+    padding-top: 51px;
     padding-bottom: 33px;
 
     display: flex;
@@ -328,6 +328,7 @@
 .main-footer {
     margin-top: 65px;
     margin-bottom: 75px;
+    position: relative;
 }
 
 .main-footer-wrapper {
@@ -341,9 +342,17 @@
 }
 
 .map {
-    background-image: url(../img/map1.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
+    height: 416px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 42px;
+}
+
+.map-bg {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
 }
 
 .map-marker {
@@ -356,6 +365,7 @@
     width: 319px;
     background-color: var(--color-btn);
     margin: 54px 0;
+    z-index: 100;
 }
 
 .footer-social {
@@ -408,11 +418,6 @@
     margin: 48px 50px 0 50px;
 }
 
-.map {
-    margin: 0;
-    margin-bottom: 42px;
-}
-
 .modal {
     position: fixed;
     bottom: 183px;
@@ -438,6 +443,7 @@
     position: absolute;
     top: 78px;
     right: 90px;
+    cursor: pointer;
 }
 
 .modal-close:hover {
@@ -586,6 +592,7 @@ ul {
     text-decoration: none;
     text-align: center;
     margin-top: 37px;
+    vertical-align: middle;
 }
 
 .button:hover {
@@ -608,6 +615,7 @@ ul {
     line-height: 18px;
     text-transform: uppercase;
     color: var(--color-btn);
+    cursor: pointer;
 } 
 
 .button-red:hover {
@@ -630,6 +638,7 @@ ul {
     line-height: 18px;
     text-transform: uppercase;
     color: var(--color-btn);
+    cursor: pointer;
 } 
 
 .button-green:hover {
@@ -652,6 +661,7 @@ ul {
     line-height: 18px;
     text-transform: uppercase;
     color: var(--color-btn);
+    cursor: pointer;
 } 
 
 .button-gold:hover {
@@ -669,6 +679,7 @@ ul {
     display: block;
     margin: 40px 50px 50px 48px;
     padding-left: 46px;
+    cursor: pointer;
 }
 
 .partner-logo {

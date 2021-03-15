@@ -40,7 +40,7 @@ senderForm.addEventListener("submit", function (evt) {
     if (!senderLogin.value || !senderMail.value || !senderText.value) {
       evt.preventDefault();
       modalPopup.classList.add("modal-error");
-      modalPopup.offsetWidth = loginPopup.offsetWidth;
+      modalPopup.offsetWidth = modalPopup.offsetWidth;
       modalPopup.classList.add("modal-error");
     } else {
         if (isStorageSupport) {
