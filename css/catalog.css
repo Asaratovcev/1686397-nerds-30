@@ -371,6 +371,8 @@
     background-color: var(--color-btn);
     margin: 54px 0;
     z-index: 100;
+    position: absolute;
+    top: 0;
 }
 
 .footer-social {
@@ -435,6 +437,7 @@
     display: none;
     background-color: var(--color-btn);
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    z-index: 200;
 }
 
 .modal-close {

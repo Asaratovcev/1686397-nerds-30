@@ -1,26 +1,39 @@
-function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 8,
-      center: { lat: -34.397, lng: 150.644 },
-    });
-    const geocoder = new google.maps.Geocoder();
-    document.getElementById("submit").addEventListener("click", () => {
-      geocodeAddress(geocoder, map);
-    });
-  }
-  
-  function geocodeAddress(geocoder, resultsMap) {
-    const address = document.getElementById("address").value;
-    geocoder.geocode({ address: address }, (results, status) => {
-      if (status === "OK") {
-        resultsMap.setCenter(results[0].geometry.location);
-        new google.maps.Marker({
-          map: resultsMap,
-          position: results[0].geometry.location,
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.939153953647676,30.321626255625393],
+            zoom: 17,
+            controls: []
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemarkWithContent = new ymaps.Placemark([59.93885248352459,30.323192665690094], {
+            hintContent: 'Мы находимся здесь',
+            balloonContent: 'Мы находимся здесь',
+            iconContent: ''
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: '../img/marker.png',
+            // Размеры метки.
+            iconImageSize: [231, 190],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-45, -182],
+            // Смещение слоя с содержимым относительно слоя с картинкой.
+            iconContentOffset: [15, 15],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
         });
-      } else {
-        alert("Geocode was not successful for the following reason: " + status);
-      }
-    });
-  }
+
+    myMap.geoObjects
+        .add(myPlacemarkWithContent);
+});
   

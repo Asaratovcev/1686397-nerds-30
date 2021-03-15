@@ -348,24 +348,13 @@
     margin-bottom: 42px;
 }
 
-.map-bg {
-    height: inherit;
-    width: inherit;
-    position: absolute;
-    top: 0;
-}
-
-.map-marker {
-    position:relative;
-    right: -323px;
-    top: -28px;
-}
-
 .footer-contacts {
     width: 319px;
     background-color: var(--color-btn);
     margin: 54px 0;
     z-index: 100;
+    position: absolute;
+    top: 0;
 }
 
 .footer-social {
@@ -430,6 +419,7 @@
     display: none;
     background-color: var(--color-btn);
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    z-index: 200;
 }
 
 .modal-close {
