@@ -1,18 +1,18 @@
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [59.939153953647676,30.321626255625393],
-            zoom: 17,
-            controls: []
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
+        center: [59.939153953647676, 30.321626255625393],
+        zoom: 17,
+        controls: []
+    }, {
+        searchControlProvider: 'yandex#search'
+    }),
 
         // Создаём макет содержимого.
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
 
-        myPlacemarkWithContent = new ymaps.Placemark([59.93885248352459,30.323192665690094], {
+        myPlacemarkWithContent = new ymaps.Placemark([59.93885248352459, 30.323192665690094], {
             hintContent: 'Мы находимся здесь',
             balloonContent: 'Мы находимся здесь',
             iconContent: ''
@@ -26,7 +26,7 @@ ymaps.ready(function () {
             iconImageSize: [231, 190],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-45, -182],
+            iconImageOffset: [-44, -179],
             // Смещение слоя с содержимым относительно слоя с картинкой.
             iconContentOffset: [15, 15],
             // Макет содержимого.
@@ -36,4 +36,3 @@ ymaps.ready(function () {
     myMap.geoObjects
         .add(myPlacemarkWithContent);
 });
-  
