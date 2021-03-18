@@ -1082,7 +1082,7 @@
     top: 0;
     width: 21px;
     height: 17px;
-    background-image: url(/img/shape.svg);
+    background-image: url(../img/shape.svg);
     background-repeat: no-repeat;
     display: block;
     margin: 0;
@@ -1128,8 +1128,8 @@
 .item-radio:checked + label::after {
     content: "";
     position: absolute;
-    left: -28px;
-    top: 7px;
+    left: -27px;
+    top: 8px;
     width: 9px;
     height: 9px;
     background-color: var(--panel-gray);
